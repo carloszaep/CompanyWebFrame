@@ -3,6 +3,7 @@
 body {
   font-family: "Pacifico", cursive;
   color: gray;
+  background: linear-gradient(to top left, #f7f7f7, #b8fff9);
 }
 
 #mainBody {
@@ -35,7 +36,7 @@ body {
   text-align: center;
   justify-items: center;
   padding: 10% 15%;
-  background-color: #fce2db;
+  background-color: #fff6ea;
 }
 
 h1 {
