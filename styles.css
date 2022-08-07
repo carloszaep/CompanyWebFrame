@@ -3,7 +3,6 @@
 body {
   font-family: "Pacifico", cursive;
   color: gray;
-  background: linear-gradient(to top left, #f7f7f7, #b8fff9);
 }
 
 #mainBody {
@@ -36,7 +35,7 @@ body {
   text-align: center;
   justify-items: center;
   padding: 10% 15%;
-  background-color: #fff6ea;
+  background-color: #fce2db;
 }
 
 h1 {
@@ -71,4 +70,8 @@ h2 {
 
 .imgCarusel {
   border-radius: 90% 0 90% 0;
+}
+
+#services2 {
+  margin-top: 5%;
 }
