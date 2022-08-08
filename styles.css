@@ -22,7 +22,7 @@ body {
   height: 30%;
 
   background-color: white;
-  padding: 2rem;
+
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -163,5 +163,9 @@ iframe {
   #testimonials {
     padding: 2% 2%;
     margin: 40px auto;
+  }
+  .btnExitOnshow {
+    right: -50px;
+    top: 0;
   }
 }
