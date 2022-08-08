@@ -162,5 +162,6 @@ iframe {
   }
   #testimonials {
     padding: 2% 2%;
+    margin: 40px auto;
   }
 }
