@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 body {
   position: relative;
-  font-family: "Pacifico", cursive;
+  font-family: "Josefin Sans", sans-serif;
   color: gray;
 }
 
@@ -56,13 +57,14 @@ body {
 
 #testimonials {
   padding: 5% 5%;
+  font-family: "Pacifico", cursive;
 }
 
 #footer {
   text-align: center;
   justify-items: center;
-  padding: 10% 15%;
-  background-color: #fce2db;
+  padding: 5% 10%;
+  background-color: #e3f2fd;
 }
 
 h1 {
