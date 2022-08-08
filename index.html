@@ -50,8 +50,8 @@
       
     <section class="overlay hidden" >       
     </section>
-    <section id="medal" class="">
-      <button class="btnExitOnshow"></button>
+    <section id="medal" class="hidden">
+      <button type="button" class="btn-close btnExitOnshow" aria-label="Close"></button>
       <h2>Contact Us.</h2>
     <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
       <div>
@@ -70,8 +70,8 @@
         <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
       </div>
       <div>
-        <input type="submit" name="submit" value="Send" />
-        <input type="reset" name="reset" value="Clear Form" />
+        <input type="submit" name="submit" value="Send" class="exitFrom"/>
+        <input type="reset" name="reset" value="Clear Form"/>
       </div>
     </section>
 
@@ -80,7 +80,8 @@
         <div class="row">
           <div class="col-lg-6 col-sm-12">
             <h1 class="introText">Commercial Cleaning Throughout Miami</h1>
-            <button class="btn btn-primary">Contact Us</button>
+            <a href="#medal" class="btn btn-primary btnContact">Contact Us</a>
+            
           </div>
           <div class="col-lg-6 col-sm-12 imgIntro">
             <img src="https://www.maids.com/images-assets/franchisee/the-maids-house-cleaning-services-miami-florida-maid-service.png" width="700px" alt=""/>

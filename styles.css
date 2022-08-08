@@ -84,10 +84,10 @@ h2 {
 }
 
 .btnExitOnshow {
-  width: 100px;
+  width: 200px;
   position: absolute;
   z-index: 15;
-  right: 500px;
+  right: 0;
   top: 0;
 }
 
