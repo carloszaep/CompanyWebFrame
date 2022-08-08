@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/IMG_3334.jpeg">
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -13,12 +14,12 @@
     />
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Document</title>
+    <title>Miami Cleaning Services</title>
   </head>
 
   <body>
     <header id="bar">
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="/img/IMG_3334.jpeg" width="90px" style="border-radius: 20%;" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,34 +46,69 @@
           </div>
         </div>
       </nav>
-      
-
-
     </header>
+      
+    <section class="overlay hidden" >       
+    </section>
+    <section id="medal" class="">
+      <button class="btnExitOnshow"></button>
+      <h2>Contact Us.</h2>
+    <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+      <div>
+        <label for="name">Name:
+          <input type="text" name="name" id="name" />
+        </label>
+      </div>
+      <div>
+        <label for="email">Email:
+          <input type="text" name="email" id="email" />
+        </label>
+      </div>
+      <div>
+        <label>Comments:</label>
+        <br />
+        <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+      </div>
+      <div>
+        <input type="submit" name="submit" value="Send" />
+        <input type="reset" name="reset" value="Clear Form" />
+      </div>
+    </section>
+
     <main id="mainBody">
       <section id="intro">
         <div class="row">
           <div class="col-lg-6 col-sm-12">
-            <h1 class="introText">Intro de la compania</h1>
-            <button class="introButtom btn btn-info">buttom para contantar</button>
+            <h1 class="introText">Commercial Cleaning Throughout Miami</h1>
+            <button class="btn btn-primary">Contact Us</button>
           </div>
-          <div class="col-lg-6 col-sm-12">
-            <img src="https://www.maids.com/images-assets/franchisee/the-maids-house-cleaning-services-miami-florida-maid-service.png" width="700px" alt="una foto" />
+          <div class="col-lg-6 col-sm-12 imgIntro">
+            <img src="https://www.maids.com/images-assets/franchisee/the-maids-house-cleaning-services-miami-florida-maid-service.png" width="700px" alt=""/>
           </div>
         </div>
       </section>
 
       <section id="areas">
         <div class="row">
-          <div class="col-lg-6 col-sm-12">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1tnKl49ZzSS6N0gquDoAn3iQvhBA3jM4&ehbc=2E312F" width="340" height="280"></iframe>
+          <div class="col-lg-6 col-sm-12 maps">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1tnKl49ZzSS6N0gquDoAn3iQvhBA3jM4&ehbc=2E312F" width="380" height="580"></iframe>
           </div>
           <div class="col-lg-6 col-sm-12">
-            <h2>areas donde traba</h2>
+            <h2>Where We Provide Services</h2>
             <ul class="listOfPlace">
-              <li>doral</li>
-              <li>mimi dade</li>
-              <li>ejemplo</li>
+              <li>Miami, FL</li>
+              <li>Miami Beach, FL
+              <li>Coral Gables, FL</li>
+              <li>Key Biscayne, FL</li>              
+              <li>Miami Shores, FL</li>                
+              <li>West Little River, FL</li> 
+              <li>South Miami, FL</li>  
+              <li>Miami Springs, FL</li>                 
+              <li>Westchester, FL</li> 
+              <li>Hialeah, FL</li>                
+              <li>North Miami, FL</li> 
+              <li>Glenvar Heights, FL</li>
+              
             </ul>
           </div>
         </div>
@@ -84,7 +120,7 @@
         <div class="row">
           <div class="col-lg-4 col-sm-12">
             <div class="card" >
-              <img width="100px" src="/img/cleaning.png"  alt="..." />
+              <img width="100px" src="/img/toilets.png"  alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Deep Bathroom Claning Service</h5>
                 <p class="card-text">
@@ -96,7 +132,7 @@
           </div>
           <div class="col-lg-4 col-sm-12">
             <div class="card" >
-              <img width="100px" src="/img/mop.png"  alt="..." />
+              <img width="100px" src="/img/kitchen.png"  alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Deep Kitchen Cleaning Service</h5>
                 <p class="card-text">
@@ -108,7 +144,7 @@
           </div>
           <div class="col-lg-4 col-sm-12">
             <div class="card" >
-              <img width="100px" src="/img/spray.png"  alt="..." />
+              <img width="80px" src="/img/locker.png"  alt="..."/>
               <div class="card-body">
                 <h5 class="card-title">Deep Cleaning Of The Locker Room Area</h5>
                 <p class="card-text">
@@ -126,7 +162,7 @@
         <div class="row">
           <div class="col-lg-6 col-sm-12">
             <div class="card" >
-              <img width="100px" src="/img/cleaning.png"  alt="..." />
+              <img width="100px" src="/img/office-desk.png"  alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Deep Cleaning Of All Offices Areas</h5>
                 <p class="card-text">
@@ -138,7 +174,7 @@
           </div>
           <div class="col-lg-6 col-sm-12">
             <div class="card" >
-              <img width="100px" src="/img/mop.png"  alt="..." />
+              <img width="100px" src="/img/window.png"  alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Deep Cleaning Of Doors And Windows</h5>
                 <p class="card-text">
@@ -159,10 +195,10 @@
             <p>We are a small private company how offer cleaning services to other businesses like offices or restaurants for example. We know how hard is to keep others company fresh and clean so let us do it for you. Our company operates in Miami and the surrounding.</p>
             <button class="btn btn-primary" style="margin: 3% ;">Get your free estimate</button>
           </div>
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-6 col-sm-12 imgIntro">
             
             <img width="400px" src="/img/microsoftteams.0.jpg" alt="imagen del equipo mas el logo">
-            
+             
           </div>
 
         
@@ -226,6 +262,7 @@
       <a href=""><i class="fa-brands fa-instagram"></i></a>
 
     </footer>
+    <script src="/script.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
     <script
