@@ -20,7 +20,7 @@
   <body>
     <header id="bar">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
-        <div class="container-fluid">
+        <div class="container-fluid" id="barr">
           <a class="navbar-brand" href="#"><img src="img/IMG_3334.jpeg" width="90px" style="border-radius: 20%;" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
                 <a class="nav-link " href="#services" aria-disabled="true" style="color: red;">Daily Estimate Range:</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="" aria-disabled="true"><span id="estimate1">$0</span> to <span id="estimate2">$0</span></a>
+                <a class="nav-link "  aria-disabled="true"><span id="estimate1">$0</span> to <span id="estimate2">$0</span> <i class="fa-solid fa-rotate-right"></i></a>
               </li>
             </ul>
           </div>
@@ -129,7 +129,7 @@
                 <p class="card-text">
                   Daily Price Range ($80-$100)
                 </p>
-                <a  class="btn btn-primary addEstimate1">Add To Stimate</a>
+                <a  class="btn btn-primary addEstimate1 ">Add To Stimate</a>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@
                 <p class="card-text">
                   Daily Price Range ($70-$90)
                 </p>
-                <a  class="btn btn-primary addEstimate2">Add To Stimate</a>
+                <a  class="btn btn-primary addEstimate2" >Add To Stimate</a>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
                 <p class="card-text">
                   Daily Price Range ($50-$70)
                 </p>
-                <a  class="btn btn-primary addEstimate3">Add To Stimate</a>
+                <a  class="btn btn-primary addEstimate3" >Add To Stimate</a>
               </div>
             </div>
           </div>
@@ -271,12 +271,15 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
+      src="bootstrap.min.js"
     ></script>
     
     <script src="https://kit.fontawesome.com/e33e5c2a88.js" crossorigin="anonymous"></script>
     <script src="accessibility.js"></script>
+    <script>$(document).on("click", ".navbar-collapse.in", function (e) {
+      if ($(e.target).is("a")) {
+        $(this).collapse("hide");
+      }
+    });</script>
   </body>
 </html>

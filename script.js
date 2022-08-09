@@ -110,3 +110,17 @@ addEstimate3.addEventListener("click", addToEstimate3);
 addEstimate4.addEventListener("click", addToEstimate4);
 
 addEstimate5.addEventListener("click", addToEstimate5);
+
+// collaose bar
+
+document.querySelector(".fa-rotate-right").addEventListener("click", () => {
+  estimateValue1 = 0;
+  estimateValue2 = 0;
+  estimate1.textContent = `$${estimateValue1}`;
+  estimate2.textContent = `$${estimateValue2}`;
+  cliecked1 = false;
+  cliecked2 = false;
+  cliecked3 = false;
+  cliecked4 = false;
+  cliecked5 = false;
+});
