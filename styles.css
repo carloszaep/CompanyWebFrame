@@ -11,6 +11,29 @@ body {
   padding: 0 5%;
 }
 
+#gallery {
+  padding: 5%;
+
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+.cardtall {
+  grid-row: span 2 / auto;
+}
+
+.cardwhid {
+  grid-column: span 1 / auto;
+}
+
+.cardImg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 #medal {
   position: absolute;
   z-index: 15;
