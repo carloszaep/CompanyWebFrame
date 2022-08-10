@@ -18,11 +18,15 @@ contacUsBtn.forEach((button) => {
 overlay.addEventListener("click", () => {
   overlay.classList.add("hidden");
   contactFrom.classList.add("hidden");
+  exitFrom.innerHTML =
+    '<button class="btn btn-primary exitFrom" type="submit">Send</button>';
 });
 
 closeBtn.addEventListener("click", () => {
   overlay.classList.add("hidden");
   contactFrom.classList.add("hidden");
+  exitFrom.innerHTML =
+    '<button class="btn btn-primary exitFrom" type="submit">Send</button>';
 });
 
 exitFrom.addEventListener("click", () => {
@@ -111,7 +115,7 @@ addEstimate4.addEventListener("click", addToEstimate4);
 
 addEstimate5.addEventListener("click", addToEstimate5);
 
-// collaose bar
+// reload
 
 document.querySelector(".fa-rotate-right").addEventListener("click", () => {
   estimateValue1 = 0;
