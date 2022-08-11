@@ -36,18 +36,44 @@ exitFrom.addEventListener("click", () => {
 
 // functions to add stimates
 
-const addEstimate1 = document.querySelector(".addEstimate1");
-const addEstimate2 = document.querySelector(".addEstimate2");
-const addEstimate3 = document.querySelector(".addEstimate3");
-const addEstimate4 = document.querySelector(".addEstimate4");
-const addEstimate5 = document.querySelector(".addEstimate5");
+const addEstimate1 = {
+  element: document.querySelector(".addEstimate1"),
+  cliecked: false,
+  value1: 80,
+  value2: 100,
+};
+const addEstimate2 = {
+  element: document.querySelector(".addEstimate2"),
+  cliecked: false,
+  value1: 70,
+  value2: 90,
+};
+const addEstimate3 = {
+  element: document.querySelector(".addEstimate3"),
+  cliecked: false,
+  value1: 50,
+  value2: 70,
+};
+const addEstimate4 = {
+  element: document.querySelector(".addEstimate4"),
+  cliecked: false,
+  value1: 80,
+  value2: 100,
+};
+const addEstimate5 = {
+  element: document.querySelector(".addEstimate5"),
+  cliecked: false,
+  value1: 50,
+  value2: 70,
+};
 
-let cliecked1 = false;
-let cliecked2 = false;
-let cliecked3 = false;
-let cliecked4 = false;
-let cliecked5 = false;
-
+const allAddEsimates = [
+  addEstimate1,
+  addEstimate2,
+  addEstimate3,
+  addEstimate4,
+  addEstimate5,
+];
 // estimate value display
 const estimate1 = document.getElementById("estimate1");
 const estimate2 = document.getElementById("estimate2");
@@ -55,65 +81,17 @@ const estimate2 = document.getElementById("estimate2");
 let estimateValue1 = 0;
 let estimateValue2 = 0;
 
-function addToEstimate1() {
-  if (cliecked1 === false) {
-    estimateValue1 += 80;
-    estimateValue2 += 100;
-    estimate1.textContent = `$${estimateValue1}`;
-    estimate2.textContent = `$${estimateValue2}`;
-    cliecked1 = true;
-  }
-}
-
-function addToEstimate2() {
-  if (cliecked2 === false) {
-    estimateValue1 += 70;
-    estimateValue2 += 90;
-    estimate1.textContent = `$${estimateValue1}`;
-    estimate2.textContent = `$${estimateValue2}`;
-    cliecked2 = true;
-  }
-}
-
-function addToEstimate3() {
-  if (cliecked3 === false) {
-    estimateValue1 += 50;
-    estimateValue2 += 70;
-    estimate1.textContent = `$${estimateValue1}`;
-    estimate2.textContent = `$${estimateValue2}`;
-    cliecked3 = true;
-  }
-}
-
-function addToEstimate4() {
-  if (cliecked4 === false) {
-    estimateValue1 += 80;
-    estimateValue2 += 100;
-    estimate1.textContent = `$${estimateValue1}`;
-    estimate2.textContent = `$${estimateValue2}`;
-    cliecked4 = true;
-  }
-}
-
-function addToEstimate5() {
-  if (cliecked5 === false) {
-    estimateValue1 += 50;
-    estimateValue2 += 70;
-    estimate1.textContent = `$${estimateValue1}`;
-    estimate2.textContent = `$${estimateValue2}`;
-    cliecked5 = true;
-  }
-}
-
-addEstimate1.addEventListener("click", addToEstimate1);
-
-addEstimate2.addEventListener("click", addToEstimate2);
-
-addEstimate3.addEventListener("click", addToEstimate3);
-
-addEstimate4.addEventListener("click", addToEstimate4);
-
-addEstimate5.addEventListener("click", addToEstimate5);
+allAddEsimates.forEach((button) => {
+  button.element.addEventListener("click", () => {
+    if (!button.cliecked) {
+      estimateValue1 += button.value1;
+      estimateValue2 += button.value2;
+      estimate1.textContent = `$${estimateValue1}`;
+      estimate2.textContent = `$${estimateValue2}`;
+      button.cliecked = true;
+    }
+  });
+});
 
 // reload
 
@@ -122,9 +100,7 @@ document.querySelector(".fa-rotate-right").addEventListener("click", () => {
   estimateValue2 = 0;
   estimate1.textContent = `$${estimateValue1}`;
   estimate2.textContent = `$${estimateValue2}`;
-  cliecked1 = false;
-  cliecked2 = false;
-  cliecked3 = false;
-  cliecked4 = false;
-  cliecked5 = false;
+  allAddEsimates.forEach((element) => {
+    element.cliecked = false;
+  });
 });
