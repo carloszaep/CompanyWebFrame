@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap");
 
 body {
   position: relative;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "DynaPuff", cursive;
   color: gray;
 }
 
@@ -76,8 +77,8 @@ body {
 
 #mainBody {
   text-align: center;
-  justify-items: center;
-  padding: 5% 15%;
+
+  padding: 10% 10%;
 }
 
 #intro {
@@ -85,7 +86,7 @@ body {
 }
 
 #areas {
-  padding: 5%;
+  padding: 10% 5%;
 }
 
 #whoWeAre {
@@ -112,9 +113,10 @@ body {
 }
 
 h1 {
-  line-height: 4rem;
-  font-size: 3rem;
-  padding: 5%;
+  line-height: 5rem;
+  font-size: 4rem;
+  padding: 5% 15%;
+  font-family: "Rubik Marker Hatch", cursive;
   color: #000;
 }
 
@@ -218,5 +220,8 @@ iframe {
   }
   #ourgallery {
     display: none;
+  }
+  h1 {
+    font-size: 3rem;
   }
 }
