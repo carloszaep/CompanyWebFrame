@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap");
 
 body {
@@ -56,6 +55,11 @@ body {
 }
 .fa-brands {
   margin: 1%;
+}
+.madeBy {
+  margin-left: 100px;
+  font-size: 0.5 rem;
+  display: inline;
 }
 
 #medal {
@@ -223,5 +227,10 @@ iframe {
   }
   h1 {
     font-size: 3rem;
+  }
+  .madeBy {
+    margin-left: 60px;
+    font-size: 0.2 rem;
+    display: inline;
   }
 }
