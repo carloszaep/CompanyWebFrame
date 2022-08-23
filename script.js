@@ -5,6 +5,7 @@ const contacUsBtn = document.querySelectorAll(".btnContact");
 const closeBtn = document.querySelector(".btnExitOnshow");
 const exitFrom = document.querySelector(".exitFrom");
 const contactFrom = document.getElementById("medal");
+const nav = document.querySelector("nav");
 
 // add event listenir to btns
 
@@ -103,4 +104,31 @@ document.querySelector(".fa-rotate-right").addEventListener("click", () => {
   allAddEsimates.forEach((element) => {
     element.cliecked = false;
   });
+});
+
+// menue fade animation
+nav.addEventListener("mouseover", function (e) {
+  if (e.target.classList.contains("nav-link")) {
+    const link = e.target;
+    const siblings = link.closest(".navbar-nav").querySelectorAll(".nav-link");
+
+    siblings.forEach((el) => {
+      if (el != link) {
+        el.style.opacity = 0.5;
+      }
+    });
+  }
+});
+
+nav.addEventListener("mouseout", function (e) {
+  if (e.target.classList.contains("nav-link")) {
+    const link = e.target;
+    const siblings = link.closest(".navbar-nav").querySelectorAll(".nav-link");
+
+    siblings.forEach((el) => {
+      if (el != link) {
+        el.style.opacity = 1;
+      }
+    });
+  }
 });
