@@ -132,3 +132,26 @@ nav.addEventListener("mouseout", function (e) {
     });
   }
 });
+
+// reveal sections
+
+const allSection = document.querySelectorAll(".sections");
+const revealSection = function (entries, obsever) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section--hidden");
+
+  obsever.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.5,
+});
+
+allSection.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});

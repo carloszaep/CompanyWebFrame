@@ -17,20 +17,21 @@ body {
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-auto-rows: 240px;
-  --delay: 100ms;
+  transition: all 0.7s;
 }
 
-@keyframes cardAnimations {
-  from {
-    opacity: 0;
-    transform: scale(0.3);
-    filter: hue-rotate(180deg);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-    filter: hue-rotate(0deg);
-  }
+.section--hidden {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+.btn:hover {
+  transition: all 0.3s;
+  box-shadow: 1rem 5rem 3rem rgba(#000, 1);
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(0);
 }
 
 .cardtall {
@@ -42,7 +43,6 @@ body {
 }
 
 .cardImg {
-  animation: cardAnimations 700ms ease-out;
   animation-fill-mode: backwards;
   border-radius: 10%;
   background-size: cover;
@@ -50,9 +50,6 @@ body {
   background-position: center center;
 }
 
-.cardImg:hover {
-  transform: scale(1.05);
-}
 .fa-brands {
   margin: 1%;
 }
